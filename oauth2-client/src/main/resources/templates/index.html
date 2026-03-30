@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login OAuth2</title>
+</head>
+<body>
+<h2>Connexion OAuth2</h2>
+
+<p th:if="${error}" th:text="${error}" style="color: red;"></p>
+
+<p>
+    <a th:href="@{/oauth2/authorization/google}">Se connecter avec Google</a>
+</p>
+</body>
+</html>
+
